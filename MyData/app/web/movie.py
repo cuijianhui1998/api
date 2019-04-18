@@ -1,5 +1,7 @@
 from app.web import web
-from flask import request,jsonify
+from flask import request,Response
+import json
+
 
 from app.lib.movie import movie_data
 
@@ -16,4 +18,4 @@ def top250():
     if request.args.get('start'):
         start = request.args.get('start')
     response = movie_data(movie_type='top250',start=start,count=count)
-    return jsonify(response)
+    return Response(json.dumps(response),mimetype='application/json')
