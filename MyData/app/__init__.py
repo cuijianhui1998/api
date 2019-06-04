@@ -1,3 +1,4 @@
+
 from flask import Flask
 import redis
 
@@ -7,6 +8,7 @@ from app.models.douban.star import Star
 from app.models.league_of_legends.hero import Hero
 from app.models.league_of_legends.skin import Skin
 from app.models.league_of_legends.spell import Spell
+from app.models.douyu.all import Top120
 from app.error.forbid import ForbidException
 
 class RedisFlask(Flask):
