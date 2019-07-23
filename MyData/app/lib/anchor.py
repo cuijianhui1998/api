@@ -1,20 +1,6 @@
-from dataclasses import dataclass
-
-from sqlalchemy import desc
-
 from app.models.douyu.all import Top120
 from app.error.error_url import NotFoundDataException
 
-@dataclass()
-class _Myclass():
-    anchor_type:str
-    anchor_name:str
-    od:str
-    hot:int
-    room_id:int
-    room_name:str
-    room_url:str
-    anchor_id:int
 
 def get_top120(start,count):
     if start+count>120:
