@@ -1,6 +1,6 @@
 import datetime,csv
 from app.error.forbid import ForbidException
-from flask import request,session
+from flask import request
 
 from app import create_app
 from app.error.error_url import NotFoundUrlException

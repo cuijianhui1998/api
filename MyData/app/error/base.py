@@ -29,3 +29,4 @@ class APIException(HTTPException):
         full_path = str(request.full_path)
         main_path = full_path.split('?')
         return main_path[0]
+
