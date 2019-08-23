@@ -248,4 +248,6 @@ http://api.cuijianhui.com/v1/validatecode/100/100
 
 ajax请求url获取到数据后,将img标签中src的值设置为回调函数结果的content  
 
+```
 <img src="">
+```
